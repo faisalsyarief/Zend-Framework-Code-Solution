@@ -1,0 +1,10 @@
+<h1>Product List</h1>
+<ul>
+    <?php foreach ($products as $product): ?>
+        <li>
+            <a href="/product/detail/<?= $product['id'] ?>">
+                <?= $product['name'] ?> - $<?= $product['price'] ?>
+            </a>
+        </li>
+    <?php endforeach; ?>
+</ul>
